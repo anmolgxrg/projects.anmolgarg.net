@@ -1,0 +1,354 @@
+*{
+	margin:0;
+	padding:0;
+} 
+
+section{
+     width:100%;
+     float:right;
+	 background-color: #F4F9F8;
+}
+
+.unialin{
+    width: 100%;
+}
+	
+p {
+font-family:'Questrial', sans-serif;;
+}
+H1 {
+font-family:'Questrial', sans-serif;;
+}
+H2 {
+font-family:'Questrial', sans-serif;;
+}
+H3 {
+font-family:'Questrial', sans-serif;;
+}
+ul {
+font-family:'Questrial', sans-serif;;
+}
+li {
+font-family:'Questrial', sans-serif;;
+}
+a {
+font-family:'Questrial', sans-serif;;
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width: 16.66%;
+	float: left;
+	}
+.col-3 {width: 25%;
+	float: right;
+}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;
+         float: left;
+  }
+  .col-8 {width: 66.66%;
+  float: left;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;
+         float: left;
+   }
+  .col-11 {
+	  width: 91.66%;}
+  .col-12 {
+	  width: 100%;}
+
+.chopbar {
+  width:30%;
+   float:left;
+   background-color: #F4F9F8;
+   color: red;
+}
+
+.logo {
+	width: 30%;
+	margin: 35px 0 0 50px;
+	float: left;
+}
+
+.qq {
+	font-weight: 100;
+	color: #4d4d4d;
+}
+
+.navmenu{
+	width:60%;
+	float: left;
+	margin: 57px -255px 0 228px;
+}
+
+.navmenu ul{
+    width:100%;
+    float:left;
+}
+  
+.navmenu a{
+    width:100%;
+    float:left;
+	text-decoration: none;
+}
+  
+.navmenu ul li{
+   width:14%;
+   float: left;
+   font-size: 17px;
+   font-weight: 600;
+   list-style: none;
+   margin:0 0 0 0;
+}
+
+.footerblocks ul li{
+   font-size: 17px;
+   font-weight: 300;
+   list-style: none;
+   margin:0 0 0 0;
+}
+
+.banimg {
+  width:40%;
+   float:right;
+   margin: 0 0 0 0;
+   	background-color: #F4F9F8;
+}
+
+.banrit {
+  width:50%;
+   float:left;
+   margin: 180px 0 0 40px;
+   	background-color: #F4F9F8;
+}
+
+.topban {
+	   	background-color: #F4F9F8;
+}
+
+.body1 {
+	   margin: 50px 0 0 0;
+	   width: 100%;
+}
+
+.bod1img {
+  width:40%;
+   float:right;
+   margin: 0 60px 0 0;
+}
+
+.bod1rit {
+  width:50%;
+   float:left;
+   margin: 105px 0 0 50px;
+}
+
+.b1rh1 {
+	font-size: 32;
+    line-height: 1.2;
+	font-weight: bold;
+}
+
+.bod2img {
+  width:40%;
+   float:left;
+   margin: 0 0 0 0;
+}
+
+.bod2rit {
+  width:50%;
+   float:right;
+   margin: 200px 0 0 20px;
+}
+
+.blocks{
+	width:30%; 
+	margin: 4px 0 0 30px; 
+	float: left; 
+	height:auto; 
+	width:30%; 
+} 
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	width: 100%;
+}
+
+.anmol1 {
+	padding: 0 0 0 170px;
+	background-video: url('images/ftrvideo.mp4');
+}
+
+.bodtimg {
+  width:40%;
+   float:right;
+   margin: 0 100px 0 0;
+}
+
+.bodtrit {
+  width:45%;
+   float:left;
+   margin:5px 0 0 80px;
+}
+
+.bannerh {
+	width: 100%;
+	background-color: #F4F9F8;
+}
+
+.headerh {
+	width: 100%;
+	background-color: #F4F9F8;
+}
+
+input[type=text], select {
+  width: 600px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #c3fe79;
+  color: black;
+  border: 2px solid #000000;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #FFFFFF;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+.footer{
+	height:400px; 
+	width:100%; 
+	background-color: #FFFFFF; 
+	color: #000000; 
+	margin: 25px 0 0 0;
+} 
+
+.footerblocks{
+	margin: 40px 16px 9px 53px; 
+	float: left; 
+	height:80px; 
+	width:20%;  
+	color:#000000;
+}
+
+.btnftr {
+	margin: 30px 0 0 0;
+	background-color: black;
+	color: white;
+	padding: 12px 12px 12px 12px;
+	border-radius:10px 10px 10px 10px;
+	border: none;
+	
+}
+
+.btnftr:hover {
+  background-color: #c3fe79;
+  color: black;
+  border: 2px solid #000000;
+}
+
+.btn1 {
+	background-color: red;
+	color: white;
+    padding: 22px 22px 22px 22px;
+	font-size: 10px;
+	border: none;
+}
+.btn2 {
+	background-color: none;
+	color: grey;
+	padding: 20px 20px 20px 20px;
+    border: 2px solid red;
+}
+
+
+.bh1 {
+	font-size: 50px;
+	color: #4d4d4d;
+}
+
+.fot {
+	background-color: white;
+}
