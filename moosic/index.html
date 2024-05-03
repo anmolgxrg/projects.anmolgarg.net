@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moosic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Moosic</h1>
+        </div>
+        <div id="playlist" class="playlist slider">
+            <button class="arrow left-arrow">←</button>
+            <div class="songs">
+                <a href="audio/song1.mp3">Song 1</a>
+                <a href="audio/song2.mp3">Song 2</a>
+                <a href="audio/song3.mp3">Song 3</a>
+            </div>
+            <button class="arrow right-arrow">→</button>
+        </div>
+        <div class="music-player">
+            <audio id="audioSource">
+                <source src="audio/audio1.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="controls">
+                <button id="playPauseBtn">Play</button>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <span id="currentTime">0:00</span>/<span id="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
