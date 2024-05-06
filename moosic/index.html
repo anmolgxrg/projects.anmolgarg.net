@@ -11,12 +11,16 @@
         <div class="header">
             <h1>Moosic</h1>
         </div>
+        <div class="camera">
+            <video id="video" width="640" height="480" autoplay></video>
+            <button id="startCamera">Start Camera</button>
+        </div>
         <div id="playlist" class="playlist slider">
             <button class="arrow left-arrow">←</button>
             <div class="songs">
-                <a href="audio/song1.mp3">Song 1</a>
-                <a href="audio/song2.mp3">Song 2</a>
-                <a href="audio/song3.mp3">Song 3</a>
+                <a href="audio/song1.mp3">Cool Down</a>
+                <a href="audio/song2.mp3">Bliss</a>
+                <a href="audio/song3.mp3">Calm</a>
             </div>
             <button class="arrow right-arrow">→</button>
         </div>
@@ -35,5 +39,25 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        const video = document.getElementById('video');
+        const startButton = document.getElementById('startCamera');
+
+        startButton.onclick = function() {
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function(stream) {
+                    video.srcObject = stream;
+                    video.play();
+                })
+                .catch(function(error) {
+                    console.log("Error accessing the camera: ", error);
+                });
+            } else {
+                alert('Your browser does not support media devices.');
+                return;
+            }
+        };
+    </script>
 </body>
 </html>

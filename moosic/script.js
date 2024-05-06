@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var progress = document.getElementById('progress');
     var currentTimeDisplay = document.getElementById('currentTime');
     var durationDisplay = document.getElementById('duration');
-
+    
     function formatTime(seconds) {
         const minutes = Math.floor(seconds / 60);
         const secondsPart = Math.floor(seconds % 60);
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     for (let i = 0; i < links.length; i++) {
         links[i].addEventListener('click', function(event) {
-            event.preventDefault();  // Prevents the default action of the link
+            event.preventDefault();
             currentIndex = i;
             playSong(currentIndex);
         }, false);
@@ -62,5 +62,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    playSong(0); // Start with the first song
+    playSong(0);
 });
