@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="modi.png">
+    <title>Finding Modi</title>
+    <style>
+        html,
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 70px;
+        }
+
+        h2 {
+            font-size: 60px;
+        }
+
+        #start,
+        #levels {
+            text-align: center;
+        }
+
+        #levels {
+            font-size: 25px;
+        }
+
+        #one {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            border: hidden;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            padding: 12px 24px;
+            margin-right: 10px;
+            width: 200px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+</head>
+
+<body background="bg.jpg" ;>
+    <div class="container"> <div id="start">
+        <h2>Finding Modi</h2>
+    </div>
+    <div id="levels">
+        <h3>Select Level</h3>
+    </div>
+    <div id="one">
+
+        <button id="easy" onclick="startGame(1)">Easy</button>
+        <button id="medium" onclick="startGame(2)">Medium</button>
+        <button id="hard" onclick="startGame(3)">Hard</button>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

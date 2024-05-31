@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #eaeaea;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th {
+    background-color: #1976D2;
+    color: white;
+    font-size: 20px;
+}
+
+td,
+th {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    background-color: #fcfcfc;
+}
+
+td:hover {
+    background-color: #f2f2f2;
+}
+
+.month-label,
+.editable-month-label {
+    width: 95%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.month-label:focus,
+.editable-month-label:focus {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    outline: none;
+    border: 1px solid #1976D2;
+    background-color: #fff;
+}
+
+.month-name {
+    font-weight: bold;
+    color: #1976D2;
+}
+
+.year-header {
+    text-align: center;
+}
+
+.save-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #bbb;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.save-icon:hover {
+    color: #333;
+    transform: translateY(-50%) scale(1.1);
+}
+
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+@media (max-width: 768px) {
+    .editable-month-label {
+        width: calc(100% - 40px);
+    }
+
+}

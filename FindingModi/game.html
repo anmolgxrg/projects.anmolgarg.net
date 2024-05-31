@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Finding Modi</title>
+    <link rel="shortcut icon" href="modi.png">
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        p {
+            position: absolute;
+            bottom: 0;
+            left: 25px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 70px;
+            color: white;
+
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 40px;
+            text-align: center;
+            font-size: 30px;
+            margin: 4px 2px;
+            transition: 0.3s;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            opacity: 90%;
+
+        }
+
+        #img1 {
+            animation: shake 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-15deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(15deg);
+            }
+        }
+    </style>
+</head>
+
+<body background="bg.jpg">
+    <div class="container">
+        <img src="modi.png" id="img1" height="150px" width="200px" style="position: absolute; top: 100px; left: 100px;">
+        <p> </p>
+        <div class="button">
+            <button onclick="changePos()">Start</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
